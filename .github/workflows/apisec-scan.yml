@@ -69,3 +69,17 @@ jobs:
          uses: github/codeql-action/upload-sarif@v2
          with:
           sarif_file: ./apisec-results.sarif
+            - nombre: despliegue de copiloto
+  # Puedes fijar la confirmación exacta o la versión.
+  # usos: fuji97/aws-ecs-copilot-deploy@3135fe0b52d8853171c899493da501130c3ef004
+  usos: fuji97/aws-ecs-copilot-deploy@v1.1
+  con:
+    # Entornos para implementar
+    ambientes:
+    # Cargas de trabajo para implementar
+    cargas de trabajo:
+    # Depósito para cargar la plantilla de CloudFormation
+    cubo: # opcional
+    # Establecer el método de implementación (manual | automático)
+    implementar_método: # opcional, el valor predeterminado es manual
+          
